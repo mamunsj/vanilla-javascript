@@ -1,0 +1,9 @@
+body{
+    margin-top: 4rem;
+}
+
+.textCustom{
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(58, 52, 54);
+}
