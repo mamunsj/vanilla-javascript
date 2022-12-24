@@ -1,0 +1,33 @@
+body{
+    background-color: aliceblue;
+    margin: .5rem;
+
+}
+
+#wrapper{
+    max-width: 750px;
+    padding:2.4rem;
+    margin:  .8rem 3rem;
+    border-radius: .4rem;
+    background-color: rgb(194, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap :4rem
+}
+
+
+p{
+    color: rgb(7, 121, 227);
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: .8rem;
+    
+}
+
+input{
+    display: block;
+    padding: .3rem 2rem;
+    /* margin: .5rem 20rem; */
+}
