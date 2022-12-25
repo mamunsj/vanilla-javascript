@@ -100,10 +100,10 @@ li = document.querySelector("li");
 //     main.style.background ="rgb("+e.clientX+", "+e.clientY+",59)"
 // }
 
-let input =document.querySelector('input').value;
 let form = document.querySelector('form')
 form.addEventListener('submit', function(e){
-    e.preventDefault();
+  e.preventDefault();
+  let input =document.querySelector('input').value;
 
     // creatElement
     var newList = document.createElement("li");
