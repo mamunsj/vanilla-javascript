@@ -34,23 +34,26 @@
 
 // Dom crash course part two starts now >>>>>>>>>
 
+
 var items = document.getElementById("items");
 li = document.querySelector("li");
-// creatElement
-var newList = document.createElement("li");
+  // creatElement
+  var newList = document.createElement("li");
 
-newList.style.fontSize = "25px";
-newList.style.fontWeight = "400";
-// Add a class to the element you created
-newList.className = "list-group-item";
-newList.id = "newAdded";
-newList.setAttribute("title", "newly added");
+  newList.style.fontSize = '25px'
+  newList.style.fontWeight = '400'
+  // Add a class to the element you created
+  newList.className = "list-group-item";
+  newList.id = "newAdded";
+  newList.setAttribute("title", "newly added");
 
-// craeat textNode
-var textNode = document.createTextNode("Newly added list");
-newList.appendChild(textNode);
-items.insertBefore(newList, li);
+  // craeat textNode
+  var textNode = document.createTextNode("Newly added list");
+  newList.appendChild(textNode);
+  items.insertBefore(newList, li)
 //   items.append(newList);
+  
+
 
 // for (var i = 0; i < 5; i++) {
 
@@ -75,7 +78,7 @@ items.insertBefore(newList, li);
 //     e.preventDefault();
 //     console.log(e)
 //     console.log(e.target.value)
-//   console.log('Helllo Ujjal')
+//   console.log('Helllo Ujjal')  
 
 //   var newList = document.createElement("li");
 //   newList.className = "list-group-item";
@@ -97,12 +100,11 @@ items.insertBefore(newList, li);
 //     main.style.background ="rgb("+e.clientX+", "+e.clientY+",59)"
 // }
 
-let form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
+let form = document.querySelector('form')
+form.addEventListener('submit', function(e){
   e.preventDefault();
-  let input = document.querySelector("input").value;
+  let input =document.querySelector('input').value;
 
-  if (!document.querySelector(".inputText").value == "") {
     // creatElement
     var newList = document.createElement("li");
     newList.className = "list-group-item";
@@ -112,8 +114,4 @@ form.addEventListener("submit", function (e) {
     newList.appendChild(textNode);
     // items.insertBefore(newList, li)
     items.append(newList);
-    document.querySelector(".inputText").value = "";
-  } else{
-    alert('Please Write something you want')
-  }
-});
+})
