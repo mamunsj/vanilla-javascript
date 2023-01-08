@@ -50,3 +50,16 @@ fs.exists("index.js", (res) => {
     console.log("not found");
   }
 });
+
+// get os first 
+// const os = require('os')
+// // console.log(os.userInfo())
+// // console.log(os.hostname());
+
+// console.log(os.totalmem());
+// console.log(os.freemem());
+
+// if you want jsut totalmem and freemem then write like
+const {totalmem,machine,freemem} = require('os')
+console.log(totalmem(), machine(),freemem())
+console.log(__dirname)
