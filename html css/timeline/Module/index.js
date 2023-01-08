@@ -43,13 +43,13 @@ const fs = require('fs');
 //   }
 // });
 
-fs.exists("index.js", (res) => {
-  if(res) {
-    console.log('Found');
-  } else {
-    console.log("not found");
-  }
-});
+// fs.exists("index.js", (res) => {
+//   if(res) {
+//     console.log('Found');
+//   } else {
+//     console.log("not found");
+//   }
+// });
 
 // get os first 
 // const os = require('os')
@@ -60,6 +60,10 @@ fs.exists("index.js", (res) => {
 // console.log(os.freemem());
 
 // if you want jsut totalmem and freemem then write like
-const {totalmem,machine,freemem} = require('os')
-console.log(totalmem(), machine(),freemem())
-console.log(__dirname)
+// const {totalmem,machine,freemem} = require('os')
+// console.log(totalmem(), machine(),freemem())
+// console.log(__dirname)
+
+const path = require('path')
+const app = path.join(__dirname + "/../views");
+console.log(app);
