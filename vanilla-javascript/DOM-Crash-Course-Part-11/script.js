@@ -1,9 +1,9 @@
-const output = document.getElementById("output");
+let output = document.getElementById("output");
 let cardBody = document.getElementById("cardBody");
 output.style.display = "none";
-
-document.getElementById("zipform").addEventListener("submit", zipForm);
-function zipForm(e) {
+let zipform = document.getElementById('zipform');
+zipform.addEventListener("submit", formSubmit);
+function formSubmit(e) {
   e.preventDefault();
   let zip = document.getElementById("formInput").value;
 
@@ -39,7 +39,18 @@ function zipForm(e) {
     })
     .catch((err) => console.log(err));
 }
-document.getElementById("btn").addEventListener("click", showResult);
-function showResult(e) {
-  console.log("123");
+// document.getElementById("btn").addEventListener("click", showResult);
+// function showResult(e) {
+//   console.log("123");
+// }
+
+
+const body = document.querySelector('body');
+document.querySelector('#main').addEventListener('click', doSomething);
+function doSomething(e){
+  if(e.target.className = 'close'){
+    console.log('233333')
+   output.style.display = "none";
+  }
+ output.style.display = "none";
 }
